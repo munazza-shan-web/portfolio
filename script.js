@@ -10,3 +10,45 @@ const navLinks = [...document.querySelectorAll('nav a')];
 if('IntersectionObserver' in window){const navObserver=new IntersectionObserver(entries=>entries.forEach(entry=>{if(entry.isIntersecting){navLinks.forEach(a=>a.classList.toggle('active',a.hash==='#'+entry.target.id))}}),{rootMargin:'-15% 0px -55% 0px'});document.querySelectorAll('main>.section').forEach(el=>navObserver.observe(el))}
 document.querySelector('#copy-email').addEventListener('click',async()=>{const status=document.querySelector('#copy-status');try{await navigator.clipboard.writeText('munazzawebdeveloperr@gmail.com');status.textContent='Email copied';}catch{status.textContent='Please select and copy the email above.'}});
 document.querySelector('#year').textContent=new Date().getFullYear();
+const heroVideo = document.getElementById("hero-video");
+const videoToggle = document.getElementById("video-toggle");
+
+if (heroVideo && videoToggle) {
+  const motionPreference = window.matchMedia(
+    "(prefers-reduced-motion: reduce)"
+  );
+
+  function updateVideoButton() {
+    videoToggle.textContent = heroVideo.paused
+      ? "Play animation"
+      : "Pause animation";
+  }
+
+  heroVideo.muted = true;
+
+  heroVideo.addEventListener("play", updateVideoButton);
+  heroVideo.addEventListener("pause", updateVideoButton);
+
+  if (motionPreference.matches) {
+    heroVideo.autoplay = false;
+    heroVideo.pause();
+  } else {
+    heroVideo.play().catch(updateVideoButton);
+  }
+
+  videoToggle.addEventListener("click", () => {
+    if (heroVideo.paused) {
+      heroVideo.play().catch(updateVideoButton);
+    } else {
+      heroVideo.pause();
+    }
+  });
+
+  motionPreference.addEventListener("change", (event) => {
+    if (event.matches) {
+      heroVideo.pause();
+    }
+  });
+
+  updateVideoButton();
+}
