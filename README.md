@@ -75,23 +75,6 @@ You can also use the VS Code Live Server extension.
 
 No installation or build step is required.
 
-## Deploy on GitHub Pages
-
-1. Upload all files and the `assets` folder to the repository root.
-2. Open **Settings → Pages**.
-3. Select **Deploy from a branch**.
-4. Choose **main** and **/ (root)**.
-5. Save and wait for GitHub to publish the website.
-
-If your repository name differs from `portfolio`, update the
-portfolio link above and the `_next` and `_url` values in
-`inquiry-form.html`.
-
-## Enquiry form
-
-The form uses FormSubmit and sends requests to
-`munazza.shan@gmail.com`.
-
 FormSubmit may require email activation before enquiries can
 be delivered.
 
