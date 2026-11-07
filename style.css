@@ -57,3 +57,45 @@
 .project-status{margin:14px 0 0!important;font-size:12px!important;letter-spacing:.6px;color:var(--accent)!important}
 @media(max-width:1000px){.mobile-projects{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:700px){.mobile-projects{grid-template-columns:1fr;gap:38px;margin-top:55px}.mobile-visual{height:310px}.mobile-projects>.gallery-heading h3{font-size:23px}}
+
+
+/* Refined project presentation and stronger mobile-app previews */
+.mobile-projects{grid-template-columns:repeat(2,minmax(0,1fr));gap:34px 28px;align-items:start;margin-top:58px}
+.mobile-projects>.gallery-heading{margin-bottom:4px}
+.mobile-project-card{padding:0 0 28px;border:1px solid #2c3b47;border-radius:7px;background:linear-gradient(155deg,#14212b,#101920);overflow:hidden}
+.mobile-project-card .mobile-visual{height:340px;border:0;border-bottom:1px solid #30424e;border-radius:0}
+.mobile-project-card .project-meta,.mobile-project-card>h3,.mobile-project-card>p,.mobile-project-card>details,.mobile-project-card>.project-links{margin-left:24px;margin-right:24px}
+.mobile-project-card .project-meta{margin-top:22px}
+.mobile-project-card>h3{font-size:30px;margin-top:10px;margin-bottom:12px}
+.mobile-project-card>p{font-size:15px;line-height:1.75}
+.mobile-project-card>details{padding:14px 0;border-top:1px solid #2d3b45}
+.mobile-project-card>details p{font-size:14px;line-height:1.7}
+.mobile-project-card>.project-links{margin-top:16px}
+.mobile-project-card .project-status{margin-top:17px!important}
+.mobile-visual:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,transparent 65%,#07101855)}
+.phone-frame{z-index:1;width:174px;height:306px;padding:9px;border-width:4px}
+.phone-screen{padding:22px 11px 10px}
+.phone-brand{font-size:9px}
+.phone-brand span{font-size:6px}
+.phone-kicker{font-size:6px!important;margin-top:17px!important}
+.phone-screen h4{font-size:14px;margin-bottom:12px}
+.phone-balance,.budget-total{padding:11px}
+.phone-balance small,.budget-total small{font-size:6px}
+.phone-balance b,.budget-total b{font-size:22px}
+.phone-balance>span{font-size:7px}
+.phone-goal>div,.budget-line>span{font-size:7px}
+.phone-goal b,.budget-line b{font-size:7px}
+.phone-tabs{font-size:7px}
+.civiltwin-panel{z-index:1;padding:24px;width:84%}
+.civil-label{font-size:8px}
+.civil-head{font-size:17px}
+.civil-stats small{font-size:8px}
+.civil-row{font-size:9px}
+.civil-row b{font-size:8px}
+.civil-footer{font-size:8px}
+@media(max-width:700px){
+ .mobile-projects{grid-template-columns:1fr;gap:28px}
+ .mobile-project-card .mobile-visual{height:320px}
+ .mobile-project-card .project-meta,.mobile-project-card>h3,.mobile-project-card>p,.mobile-project-card>details,.mobile-project-card>.project-links{margin-left:19px;margin-right:19px}
+ .mobile-project-card>h3{font-size:27px}
+}
