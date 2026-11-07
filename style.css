@@ -273,22 +273,8 @@ footer{padding:27px 8%;border-color:rgba(150,177,201,.16);font-size:10px;letter-
 }
 
 
-/* Tech stack — categorized icon grid in the editorial visual system */
-.tech-stack{background:linear-gradient(145deg,#0b131b,#0a1118 72%);border-top:1px solid rgba(150,177,201,.13)}
-.tech-intro{display:grid;grid-template-columns:1.1fr .7fr;gap:8vw;align-items:end;margin-bottom:48px}
-.tech-intro h2{margin-bottom:0}
-.tech-intro .section-description{max-width:390px;margin:0 0 8px;font-size:14px;line-height:1.9;color:#aab6c0}
-.tech-groups{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-.tech-group{padding:25px 25px 23px;border:1px solid #2a3b49;background:linear-gradient(145deg,rgba(18,30,41,.88),rgba(12,21,29,.92));min-width:0;transition:border-color .25s,transform .25s}
-.tech-group:hover{border-color:#58718a;transform:translateY(-3px)}
-.tech-group-heading{display:flex;align-items:flex-start;gap:16px;padding-bottom:20px;border-bottom:1px solid rgba(150,177,201,.14)}
-.tech-group-heading>span{font:12px/1.5 monospace;color:#91b5df;letter-spacing:1px}
-.tech-group-heading h3{font-size:18px;font-weight:500;letter-spacing:-.4px;margin:0 0 5px}
-.tech-group-heading p{font-size:11px;color:#8495a3;margin:0;line-height:1.6}
-.tech-items{display:flex;flex-wrap:wrap;gap:10px;padding-top:19px}
-.tech-item{display:flex;align-items:center;gap:9px;min-height:43px;padding:7px 11px;border:1px solid rgba(150,177,201,.15);background:rgba(6,13,19,.48);color:#dce5ed;font-size:11px;letter-spacing:.1px;transition:border-color .2s,background .2s,transform .2s}
-.tech-item:hover{border-color:#7897b8;background:rgba(169,201,255,.07);transform:translateY(-2px)}
-.tech-item img{display:block;width:19px;height:19px;object-fit:contain}
-.tech-monogram{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;border:1px solid #7897b8;color:#b9d2f2;font:8px/1 monospace;letter-spacing:-.4px}
-@media(max-width:1000px){.tech-intro{gap:4vw}.tech-groups{grid-template-columns:1fr 1fr}.tech-group{padding:21px}}
-@media(max-width:700px){.tech-intro{grid-template-columns:1fr;gap:5px;margin-bottom:32px}.tech-intro h2{margin-bottom:8px}.tech-intro .section-description{max-width:100%}.tech-groups{grid-template-columns:1fr;gap:12px}.tech-group{padding:20px}.tech-items{gap:8px}.tech-item{min-height:40px;padding:6px 9px;font-size:10px}}
+
+/* Compact technology labels within Expertise */
+.skill-tags{display:flex;flex-wrap:wrap;gap:7px;margin-top:12px}
+.skill-tags span{display:inline-flex;align-items:center;min-height:27px;padding:5px 9px;border:1px solid rgba(150,177,201,.18);border-radius:2px;background:rgba(169,201,255,.035);color:#c4d0dc;font-size:10px;line-height:1.2;letter-spacing:.15px}
+.skill-tags span:hover{border-color:#7897b8;color:#e4efff}
